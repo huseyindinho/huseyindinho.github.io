@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <title>HUSEYINDINHO</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>body{
+<style>
+body{
     margin:0;
     min-height:100vh;
     background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
@@ -13,8 +14,8 @@
     justify-content:center;
     align-items:center;
     color:white;
+    overflow-x:hidden;
 }
-
 .card{
     width:100%;
     max-width:420px;
@@ -25,12 +26,10 @@
     box-shadow: 0 8px 20px rgba(0,0,0,0.5);
     transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .card:hover{
     transform: translateY(-5px);
     box-shadow: 0 15px 25px rgba(0,0,0,0.7);
 }
-
 img{
     width:130px;
     height:130px;
@@ -38,18 +37,19 @@ img{
     object-fit:cover;
     border:3px solid #fff;
     margin-bottom:20px;
+    transition: transform 0.3s;
 }
-
+img:hover{
+    transform: scale(1.05);
+}
 h1{
     margin:10px 0 5px;
 }
-
 p{
     color:#ccc;
     margin-bottom:30px;
     font-size:16px;
 }
-
 a{
     display:block;
     padding:15px;
@@ -59,35 +59,38 @@ a{
     text-decoration:none;
     border-radius:14px;
     font-weight:600;
-    transition:0.3s;
+    transition:0.3s, transform 0.3s;
 }
-
 a:hover{
     background:#ff1a1a;
     transform: translateY(-3px);
 }
-
+a.instagram{ background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+a.instagram:hover{ transform: scale(1.05); }
+a.tiktok{ background: black; color:white; }
+a.tiktok:hover{ transform: scale(1.05); background: #111; }
+a.youtube{ background: #ff0000; }
+a.youtube:hover{ transform: scale(1.05); background:#cc0000; }
 .footer{
     margin-top:30px;
     font-size:13px;
     color:#888;
-}}
+}
 </style>
 </head>
 <body>
-
 
 <div class="card">
     <img src="o2DbgYXhxa50ruSS.jpg" alt="Profil">
     <h1>HUSEYINDINHO</h1>
     <p>Sosyal Medya Hesaplarım</p>
 
-    <a href="https://instagram.com/huseyindinho" target="_blank">Instagram</a>
-    <a href="https://tiktok.com/@huseyindinho_official" target="_blank">TikTok</a>
-    <a href="https://youtube.com/@huseyindinho" target="_blank">YouTube</a>
+    <a href="https://instagram.com/huseyindinho" target="_blank" class="instagram">Instagram</a>
+    <a href="https://tiktok.com/@huseyindinho_official" target="_blank" class="tiktok">TikTok</a>
+    <a href="https://youtube.com/@huseyindinho" target="_blank" class="youtube">YouTube</a>
 
     <div class="footer">© 2026 huseyindinho</div>
 </div>
+
 </body>
 </html>
-
