@@ -8,42 +8,68 @@
 body{
     margin:0;
     min-height:100vh;
+    background:#0f0f0f;
+    font-family:Arial, Helvetica, sans-serif;
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);
-    font-family:Arial;
     color:white;
 }
-.box{
-    width:90%;
-    max-width:400px;
-    background:rgba(0,0,0,.6);
-    padding:25px;
-    border-radius:20px;
+.card{
+    width:100%;
+    max-width:420px;
+    padding:30px 20px;
     text-align:center;
+}
+img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #fff;
+    margin-bottom:15px;
+}
+h1{
+    margin:10px 0 5px;
+}
+p{
+    color:#aaa;
+    margin-bottom:25px;
 }
 a{
     display:block;
+    padding:15px;
     margin:12px 0;
-    padding:14px;
-    background:white;
-    color:black;
+    background:#1e1e1e;
+    color:white;
     text-decoration:none;
-    border-radius:12px;
-    font-weight:700;
+    border-radius:14px;
+    font-weight:600;
+    transition:0.3s;
+}
+a:hover{
+    background:#333;
+}
+.footer{
+    margin-top:30px;
+    font-size:13px;
+    color:#666;
 }
 </style>
 </head>
 <body>
 
-<div class="box">
-    <h2>HUSEYINDINHO</h2>
-    <p>Sosyal Medya</p>
+<div class="card">
+    <img src="https://i.imgur.com/1XqzZ9F.png" alt="Profil">
 
-    <a href="https://instagram.com/">Instagram</a>
-    <a href="https://tiktok.com/">TikTok</a>
-    <a href="https://youtube.com/">YouTube</a>
+    <h1>HUSEYINDINHO</h1>
+    <p>Sosyal Medya Hesaplarım</p>
+
+    <a href="https://instagram.com/" target="_blank">Instagram</a>
+    <a href="https://tiktok.com/" target="_blank">TikTok</a>
+    <a href="https://youtube.com/" target="_blank">YouTube</a>
+
+    <div class="footer">© 2026 huseyindinho</div>
 </div>
 
 </body>
